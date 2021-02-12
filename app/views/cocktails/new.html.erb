@@ -2,6 +2,6 @@
 	<h1>Créer un nouveau cocktail</h1>
 	<%= simple_form_for @cocktail do |f| %>
 	  <%= f.input :name,  :label => "Nom du cocktail" %>
-	  <%= f.button :submit,  :label => "Créer le cocktail" %>
+	  <%= f.button :submit, input_html: { class: 'btn btn-primary' } %>
 	<% end %>
 </div>

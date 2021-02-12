@@ -5,5 +5,5 @@
 	  <p><%= dose.ingredient.name %>: <%= dose.description %></p>
 	<% end %>
 
-	<%= link_to "Ajouter un ingrédient à ce cocktail", new_cocktail_dose_path(@cocktail) %>
+	<%= link_to "Ajouter un ingrédient", new_cocktail_dose_path(@cocktail), class: "btn btn-primary rounded" %>
 </div>
