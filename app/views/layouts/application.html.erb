@@ -12,6 +12,10 @@
   </head>
 
   <body>
+    <div class="navbar text-center">
+      <h1><%= link_to " Mister Cocktail", cocktails_path %></h1>
+      <%= link_to "Créer un cocktail", new_cocktail_path %>
+    </div>
     <%= yield %>
   </body>
 </html>

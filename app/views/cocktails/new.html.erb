@@ -1,6 +1,7 @@
-<h1>Cocktails#new</h1>
-
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-  <%= f.button :submit %>
-<% end %>
+<div class="container mt-4">
+	<h1>Créer un nouveau cocktail</h1>
+	<%= simple_form_for @cocktail do |f| %>
+	  <%= f.input :name,  :label => "Nom du cocktail" %>
+	  <%= f.button :submit,  :label => "Créer le cocktail" %>
+	<% end %>
+</div>

@@ -1,8 +1,9 @@
-<h1>Doses#new</h1>
-<p>Find me in app/views/doses/new.html.erb</p>
+<div class="container mt-4">
+	<h1>Ajouter un ingrédient</h1>
 
-<%= simple_form_for([@cocktail, @dose]) do |f| %>
-  <%= f.association :ingredient %>
-  <%= f.input :description %>
-  <%= f.button :submit %>
-<% end %>
+	<%= simple_form_for([@cocktail, @dose]) do |f| %>
+	  <%= f.association :ingredient, :label => "Ingrédient" %>
+	  <%= f.input :description, :label => "Quel est le dosage de l'ingrédient ?" %>
+	  <%= f.button :submit %>
+	<% end %>
+</div>

@@ -1,5 +1,9 @@
-<h1> <%= @cocktail.name %> </h1>
+<div class="container mt-4">
+	<h1> <%= @cocktail.name %> </h1>
 
-<%= @cocktail.doses.first.description %>
+	<% @cocktail.doses.each do |dose| %>
+	  <p><%= dose.ingredient.name %>: <%= dose.description %></p>
+	<% end %>
 
-<%= link_to "Add a dose to this cocktail", new_cocktail_dose_path(@cocktail) %>
+	<%= link_to "Ajouter un ingrédient à ce cocktail", new_cocktail_dose_path(@cocktail) %>
+</div>
